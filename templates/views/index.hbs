@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link href="/images/Cloud.png" rel="icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    {{>Header}}
+    <div class="content">
+        <p class="titleText">{{Title}}</p>
+        <form>
+            <label>Enter Location To Know ForeCast</label><br>
+            <input style="margin: 10px;padding: 10px;" type="text" id="input">
+            <input type="submit"  value="Search" style="color:white;border-radius: 10px;border:1px white;background-color: dodgerblue;padding:10px;font-weight: bold;font-size:16px">
+        </form>
+        <p style="font-weight: bold;" id="finalForecastData"></p>
+        <p style="font-weight: bold;color:red" id="error"></p>
+    </div>
+    {{>Footer}}
+    <script src="/js/app.js"></script>
+</body>
+</html>
